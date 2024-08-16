@@ -12,5 +12,15 @@ pipeline {
                 git " https://github.com/jagadish7-25/one.git"
             }
         }
+        stage (" test ") {
+            steps {
+                sh "ps -ef "
+            }
+        }
+        stage (" deploy") {
+            steps {
+                echo " hello world-2"
+            }
+        }
     }
 }
